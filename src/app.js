@@ -10,7 +10,6 @@ function updateTime() {
       "h:mm:ss [<small>] A[</small>]"
     );
   }
-
   let guatemalaElement = document.querySelector("#guatemala");
   if (guatemalaElement) {
     let guatemalaDateElement = guatemalaElement.querySelector(".date");
@@ -18,6 +17,17 @@ function updateTime() {
     let guatemalaTime = moment().tz("America/Guatemala");
     guatemalaDateElement.innerHTML = guatemalaTime.format("dddd, MMMM D, YYYY");
     guatemalaTimeElement.innerHTML = guatemalaTime.format(
+      "h:mm:ss [<small>] A[</small>]"
+    );
+  }
+  let newfoundlandElement = document.querySelector("#newfoundland");
+  if (newfoundlandElement) {
+    let newfoundlandDateElement = newfoundlandElement.querySelector(".date");
+    let newfoundlandTimeElement = newfoundlandElement.querySelector(".time");
+    let newfoundlandTime = moment().tz("Canada/Newfoundland");
+    newfoundlandDateElement.innerHTML =
+      newfoundlandTime.format("dddd, MMMM D, YYYY");
+    newfoundlandTimeElement.innerHTML = newfoundlandTime.format(
       "h:mm:ss [<small>] A[</small>]"
     );
   }
