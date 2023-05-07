@@ -18,6 +18,10 @@ h2 {
   font-weight: 500;
   margin: 0 0 5px;
 }
+a {
+  color: rgb(78, 141, 143);
+  text-decoration: none;
+}
 footer {
   text-align: center;
   margin-top: 20px;
